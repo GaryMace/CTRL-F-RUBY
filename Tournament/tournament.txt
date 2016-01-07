@@ -1,0 +1,6 @@
+Eimear 1 1 1 0 1
+Jack 0 0 0 0 1
+Ciara 1 0 1 1 0
+Jamie 0 1 0 0 1
+Luke 1 0 0 1 0
+Aoife 0 1 1 1 0

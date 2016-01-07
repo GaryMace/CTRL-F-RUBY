@@ -1,0 +1,72 @@
+#*Object Oriented Programming - Assignment 1* 
+Student Name: Gary Mac Elhinney   
+Student Number: 13465572
+
+
+- **Terrain.rb**
+  - **open_file**
+   ```
+    This method simply opens the file that has been passed to and stores the contents 
+    in an array and will also grab the array size
+  
+    Working: Yes
+    ```
+  - **get_lowest_point**
+    ```
+    Assigns First element within the data array as the lowest point then searches for a smaller
+    point within the array, o(n) time
+    
+    Working : Yes
+    ```
+  - **mean_height**
+    ```
+    Cycles through array adding all elements then divinding by number of elements
+    
+    Working: Yes
+    ```
+  - **deviation**
+    ```
+    Gets the standard deviation of all elemnts within file i.e how far each elevation within file is
+    from the mean
+   
+    Working: Yes
+    ```
+- **Swimming_Pool.rb**
+  - **initialize**
+  ```
+  Simply takes the passed parameters and assigns them to instance variables within swimming pool
+  ```
+  - **find_max_sizes**
+    ```
+   Cycles through data array and does a number of things at each data point
+      1. If data point is along bottom row or right-most point in the data array
+         assign its count (1), also if the current row/column+1 is out of bounds
+         skip the next set of commands
+      2. If column+1 and row+1 is the same elevation then get the min of both 
+         those points' counts, add one to it and assign it to be the current
+         indexs count
+      3. If the bottom right most point of this potential square is not the same elevaton
+         as the rest of it, then set the top left most points' count (1) i.e it's not
+         a square anymore
+  Potentially an o(n) algorithm, seeing as there's only three checks per point
+  
+  Working: Yes
+   ```
+  - **get_min_count**
+   ```
+   Finds the smaller count of row+1/column+1 and adds one to it, then assign current count
+   as that, unless bottom right most point of this square isn't the same elevation
+   
+   Working: Yes
+   ```
+  - **print_pool_coords**
+   ```
+   Simply prints best potential pool position from TOP LEFT POINT IN SQUARE
+   ```
+- **Runner.rb**
+  ```
+  Simply issues all the commands that will run the entire programme. This is where the user inputs
+  the name of the file that the programme works with
+  
+  Working: Yes
+  ```
